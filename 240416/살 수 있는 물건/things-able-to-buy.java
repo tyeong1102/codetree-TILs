@@ -11,7 +11,7 @@ public class Main {
 
         if (n >= 3000) {
             System.out.println("book");
-        } else if (n >= 1000) {
+        } else if (n >= 1000 && n < 3000) {
             System.out.println("mask");
         } else {
             System.out.println(0);

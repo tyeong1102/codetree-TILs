@@ -4,11 +4,11 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class Main {
+    public static boolean check;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-
+        
         for (int i = 0; i < 2; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
 
@@ -16,11 +16,14 @@ public class Main {
             String str = st.nextToken();
 
             if (a >= 19 && str.equals("M")) {
-                System.out.println(1);
-                return;
-            } else {
-                System.out.println(0);
-            }
+                check = true;
+            } 
+        }
+
+        if (check) {
+            System.out.println(1);
+        } else {
+            System.out.println(0);
         }
     }
 }

@@ -14,7 +14,7 @@ public class Main {
         for (int i = 0; i < n; i++) {
             int num = Integer.parseInt(br.readLine());
 
-            if (num % 3 == 0) {
+            if (num % 3 == 0 && num % 2 == 1) {
                 sb.append(num).append("\n");
             }
         }

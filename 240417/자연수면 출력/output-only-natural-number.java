@@ -14,10 +14,16 @@ public class Main {
         b = Integer.parseInt(st.nextToken());
 
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < b; i++) {
-            sb.append(a);
-        }
 
+        if (a > 0) {
+            for (int i = 0; i < b; i++) {
+                sb.append(a);
+            }
+        } else {
+            System.out.println(0);
+            return;
+        }
+        
         System.out.println(sb);
     }
 }

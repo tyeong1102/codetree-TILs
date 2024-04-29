@@ -20,8 +20,8 @@ public class Main {
 
         int ret = 0;
 
-        for (int i = 0; i < n; i++) {
-            for (int j = i; j < n; j++) {
+        for (int i = 0; i < n - 2; i++) {
+            for (int j = i; j < n - 1; j++) {
                 if (arr[i] < arr[j]) {
                     for (int k = j; k < n; k++) {
                         if (arr[j] < arr[k]) {

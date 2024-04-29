@@ -19,7 +19,7 @@ public class Main {
                 arr[i][j] = Integer.parseInt(st.nextToken());
             }
         }
-        
+
         int max = Integer.MIN_VALUE;
 
         for (int i = 0; i < n; i++) {
@@ -30,15 +30,10 @@ public class Main {
                         cnt++;
                     }
                 }
-                if (cnt == 3) {
-                    max = cnt;
-                    return;
-                }
                 max = Math.max(max, cnt);
             }
         }
 
         System.out.println(max);
-
     }
 }

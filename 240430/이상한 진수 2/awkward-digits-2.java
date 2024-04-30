@@ -12,6 +12,7 @@ public class Main {
                 System.out.println(0);
                 return;
             } else {
+                str = str.substring(0, str.length() - 1) + "0";
                 System.out.println(Integer.parseInt(str, 2));
                 return;
             }

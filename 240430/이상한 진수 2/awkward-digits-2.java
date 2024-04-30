@@ -13,8 +13,8 @@ public class Main {
         }
 
         String modified = str.replaceFirst("0", "1");
-        int max = Integer.parseInt(modified, 2);
+        int ret = Integer.parseInt(modified, 2);
 
-        System.out.println(max);
+        System.out.println(ret);
     }
 }

@@ -25,11 +25,17 @@ public class Main {
         }
 
         for (int i = 0; i < n; i++) {
-            if (map.containsKey(k - arr[i])) {
+            if (map.containsKey(k - arr[i]) && map.get(arr[i]) > 0) {
                 ret += map.get(k - arr[i]);
+
+                if (arr[i] == k - arr[i]) {
+                    ret--;
+                }
+
+                map.put(arr[i], map.get(arr[i]) - 1);
             }
         }
 
-        System.out.println(ret / 2);
+        System.out.println(ret);
     }
 }

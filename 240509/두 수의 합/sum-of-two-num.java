@@ -21,12 +21,12 @@ public class Main {
         st = new StringTokenizer(br.readLine());
         for (int i = 0; i < n; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
-            map.put(arr[i], k - arr[i]);
+            map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
         }
 
         for (int i = 0; i < n; i++) {
-            if (map.containsKey(map.get(arr[i]))) {
-                ret++;
+            if (map.containsKey(k - arr[i])) {
+                ret += map.get(k - arr[i]);
             }
         }
 

@@ -7,12 +7,12 @@ public class Main {
     public static int a, b, ret;
 
     public static boolean findNum(int num) {
+        if (num % 3 == 0) {
+            return true;
+        }
+
         while (num > 0) {
             int tmp = num % 10;
-
-            if (num % 3 == 0) {
-                return true;
-            }
 
             if (tmp == 3 || tmp == 6 || tmp == 9) {
                 return true;
